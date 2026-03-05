@@ -4,8 +4,6 @@ MeasureName=mAppIcon1
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=#start.x.pos.lnk#
-;+;Y=( [mTitle:Y] + [mTitle:H] + 10)
 X=#distance#
 Y=( [mTitle:Y] + [mTitle:H] + 10 )
 AntiAlias=1
@@ -14,7 +12,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 1 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName1" "Open"]
 ToolTipText=[mAppName1]
-;OnUpdateAction=[!Log "mApp1 X: [mApp1:X]"][!Log "mApp1 Y: [mApp1:Y]"]
 
 [mApp2]
 Meter=Image
@@ -22,8 +19,6 @@ MeasureName=mAppIcon2
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=( [mApp1:X] + [mApp1:W] + #distance#)
-;+;Y=( [mApp1:Y] )
 X=( #distance# + #horizontal_indent# )
 Y=( [mApp1:Y] )
 AntiAlias=1
@@ -32,7 +27,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 2 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName2" "Open"]
 ToolTipText=[mAppName2]
-;OnUpdateAction=[!Log "mApp2 X: [mApp2:X]"][!Log "mApp2 Y: [mApp2:Y]"]
 
 [mApp3]
 Meter=Image
@@ -40,8 +34,6 @@ MeasureName=mAppIcon3
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=( [mAppCount] <= 4 ? #distance# : ([mApp2:X] + [mApp2:W] + #distance#) )
-;+;Y=( [mAppCount] <= 4 ? ([mApp2:Y] + [mApp2:H] + 10) : ([mApp2:Y]) )
 X=( [mAppCount] <= 4 ? #distance# : ( [mApp2:X] + #horizontal_indent# ) )
 Y=( [mAppCount] <= 4 ? ( [mApp2:Y] + #vertical_indent# ) : ( [mApp2:Y] ) )
 AntiAlias=1
@@ -50,7 +42,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 3 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName3" "Open"]
 ToolTipText=[mAppName3]
-;OnUpdateAction=[!Log "mApp3 X: [mApp3:X]"][!Log "mApp3 Y: [mApp3:Y]"]
 
 [mApp4]
 Meter=Image
@@ -58,10 +49,6 @@ MeasureName=mAppIcon4
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;X=( [mAppCount] <= 9 ? 22 : ([mApp3:X] + [mApp3:W] + 22) )
-;Y=( [mAppCount] <= 9 ? ([mApp3:Y] + [mApp3:H] + 10) : ([mApp3:Y]) )
-;+;X=( [mAppCount] <= 4 ? ([mApp3:X] + [mApp3:W] + #distance#) : ( [mAppCount] <= 9 ? #distance# : ([mApp3:X] + [mApp3:W] + #distance#) ) )
-;+;Y=( [mAppCount] <= 4 ? ([mApp3:Y]) : ( [mAppCount] <= 9 ? ([mApp3:Y] + [mApp3:H] + 10) : ([mApp3:Y]) ) )
 X=( [mAppCount] <= 4 ? ( [mApp3:X] + #horizontal_indent# ) : ( [mAppCount] <= 9 ? #distance# : ( [mApp3:X] + #horizontal_indent# ) ) )
 Y=( [mAppCount] <= 4 ? ( [mApp3:Y] ) : ( [mAppCount] <= 9 ? ( [mApp3:Y] + #vertical_indent# ) : ( [mApp3:Y] ) ) )
 AntiAlias=1
@@ -70,7 +57,6 @@ UpdateDivider=1
 Hidden=([mAppCount] >= 4 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName4" "Open"]
 ToolTipText=[mAppName4]
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp5]
 Meter=Image
@@ -78,10 +64,6 @@ MeasureName=mAppIcon5
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;X=( #nAppCount# <= 9 ? 22 : ([mApp4:X] + [mApp4:W] + 22) )
-;Y=( #nAppCount# <= 9 ? ([mApp4:Y] + [mApp4:H] + 10) : ([mApp4:Y]) )
-;+;X=( [mAppCount] <= 9 ? ([mApp4:X] + [mApp4:W] + #distance#) : #distance# )
-;+;Y=( [mAppCount] <= 9 ? ([mApp4:Y]) : ([mApp4:Y] + [mApp4:H] + 10) )
 X=( [mAppCount] <= 9 ? ( [mApp4:X] + #horizontal_indent# ) : #distance# )
 Y=( [mAppCount] <= 9 ? ( [mApp4:Y]) : ( [mApp4:Y] + #vertical_indent# ) )
 AntiAlias=1
@@ -90,7 +72,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 5 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName5" "Open"]
 ToolTipText=[mAppName5]
-;OnUpdateAction=[!Log "mApp5 X: [mApp5:X]"][!Log "mApp5 Y: [mApp5:Y]"]
 
 [mApp6]
 Meter=Image
@@ -98,8 +79,6 @@ MeasureName=mAppIcon6
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=([mApp5:X] + [mApp5:W] + #distance#)
-;+;Y=([mApp5:Y])
 X=( [mApp5:X] + #horizontal_indent# )
 Y=( [mApp5:Y] )
 AntiAlias=1
@@ -108,7 +87,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 6 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName6" "Open"]
 ToolTipText=[mAppName6]
-;OnUpdateAction=[!Log "mApp6 X: [mApp6:X]"][!Log "mApp6 Y: [mApp6:Y]"]
 
 [mApp7]
 Meter=Image
@@ -116,8 +94,6 @@ MeasureName=mAppIcon7
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=( [mAppCount] <= 9 ? #distance# : ([mApp6:X] + [mApp6:W] + #distance#) )
-;+;Y=( [mAppCount] <= 9 ? ([mApp6:Y] + [mApp6:H] + 10) : ([mApp6:Y]) )
 X=( [mAppCount] <= 9 ? #distance# : ( [mApp6:X] + #horizontal_indent# ) )
 Y=( [mAppCount] <= 9 ? ( [mApp6:Y] + #vertical_indent# ) : ( [mApp6:Y] ) )
 AntiAlias=1
@@ -126,7 +102,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 7 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName7" "Open"]
 ToolTipText=[mAppName7]
-;OnUpdateAction=[!Log "mApp7 X: [mApp7:X]"][!Log "mApp7 Y: [mApp7:Y]"]
 
 [mApp8]
 Meter=Image
@@ -134,8 +109,6 @@ MeasureName=mAppIcon8
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=([mApp7:X] + [mApp7:W] + #distance#)
-;+;Y=([mApp7:Y])
 X=( [mApp7:X] + #horizontal_indent# )
 Y=( [mApp7:Y] )
 AntiAlias=1
@@ -144,7 +117,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 8 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName8" "Open"]
 ToolTipText=[mAppName8]
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp9]
 Meter=Image
@@ -152,8 +124,6 @@ MeasureName=mAppIcon9
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=( [mAppCount] <= 9 ? ([mApp8:X] + [mApp8:W] + #distance#) : #distance# )
-;+;Y=( [mAppCount] <= 9 ? ([mApp8:Y]) : ([mApp8:Y] + [mApp8:H] + 10) )
 X=( [mAppCount] <= 9 ? ( [mApp8:X] + #horizontal_indent# ) : #distance# )
 Y=( [mAppCount] <= 9 ? ( [mApp8:Y] ) : ( [mApp8:Y] + #vertical_indent# ) )
 AntiAlias=1
@@ -162,8 +132,6 @@ UpdateDivider=1
 Hidden=( [mAppCount] >= 9 ? 0 : 1 )
 LeftMouseUpAction=[!CommandMeasure "mAppName9" "Open"]
 ToolTipText=[mAppName9]
-;OnUpdateAction=[!Log "mApp9 X: [mApp9:X]"][!Log "mApp9 Y: [mApp9:Y]"]
-;OnUpdateAction=[!Log "mApp9 X: [mApp9:X]"][!Log "mApp9 Y: [mApp9:Y]"][!Log "end cord y: ( [mApp9:] + 48 + 10 )"]
 
 [mApp10]
 Meter=Image
@@ -171,8 +139,6 @@ MeasureName=mAppIcon10
 PreserveAspectRatio=1
 W=#gIconWidth#
 H=#gIconHeight#
-;+;X=([mApp9:X] + [mApp9:W] + #distance#)
-;+;Y=([mApp9:Y])
 X=( [mApp9:X] + #horizontal_indent# )
 Y=( [mApp9:Y] )
 AntiAlias=1
@@ -181,7 +147,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName10" "Open"]
 ToolTipText=[mAppName10]
 Hidden=( [mAppCount] >= 10 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp11]
 Meter=Image
@@ -197,8 +162,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName11" "Open"]
 ToolTipText=[mAppName11]
 Hidden=( [mAppCount] >= 11 ? 0 : 1 )
-;OnUpdateAction=[!Log "mAppCount FileCount: [mAppCount]"][!Log "nAppCount: #nAppCount#"]
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp12]
 Meter=Image
@@ -214,7 +177,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName12" "Open"]
 ToolTipText=[mAppName12]
 Hidden=( [mAppCount] >= 12 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp13]
 Meter=Image
@@ -230,7 +192,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName13" "Open"]
 ToolTipText=[mAppName13]
 Hidden=( [mAppCount] >= 13 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp14]
 Meter=Image
@@ -246,7 +207,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName14" "Open"]
 ToolTipText=[mAppName14]
 Hidden=( [mAppCount] >= 14 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp15]
 Meter=Image
@@ -262,7 +222,6 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName15" "Open"]
 ToolTipText=[mAppName15]
 Hidden=( [mAppCount] >= 15 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]
 
 [mApp16]
 Meter=Image
@@ -278,4 +237,3 @@ UpdateDivider=1
 LeftMouseUpAction=[!CommandMeasure "mAppName16" "Open"]
 ToolTipText=[mAppName16]
 Hidden=( [mAppCount] >= 16 ? 0 : 1 )
-;OnUpdateAction=[!Log "mApp4 X: [mApp4:X]"][!Log "mApp4 Y: [mApp4:Y]"]

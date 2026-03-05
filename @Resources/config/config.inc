@@ -6,6 +6,11 @@ colorText=255,255,255,205
 gSize=( [#gIconSize] = 1 ? 16 : ( [#gIconSize] = 2 ? 32 : ( [#gIconSize] = 3 ? 48 : ( [#gIconSize] = 4 ? 256 : 48 ) ) ) )
 gIconWidth=#gSize#
 gIconHeight=#gSize#
+lIconSize=[#gIconSize]
+lIconSize1=16
+lIconSize2=32
+lIconSize3=48
+lIconSize4=256
 distance=22
 
 horizontal_indent=( #gSize# + #distance# )

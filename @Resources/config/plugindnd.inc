@@ -6,8 +6,8 @@ FilePath=#FolderPath#
 ReplaceIfExists=1
 ProcessAllFiles=1
 ;-;Disabled=1; 0 - enable
-UpdateDivider=1
-OnDropAction=[!Log "D&D ParentPlugin: Copy file is $Name$.$Type$."]
+UpdateDivider=1000
+OnDropAction=[!Log "Skin #CURRENTFILE# Drag&Drop plugin: Copy file is $Name$.$Type$."]
 
 ;[plDragnDrop]
 ;Measure=Plugin

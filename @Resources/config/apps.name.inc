@@ -5,7 +5,7 @@ Path=[mApps]
 Type=FileName
 Index=1
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 1 ? 0 : 1 )
 
 [mAppName2]
@@ -15,7 +15,7 @@ Path=[mApps]
 Type=FileName
 Index=2
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 2 ? 0 : 1 )
 
 [mAppName3]
@@ -25,7 +25,7 @@ Path=[mApps]
 Type=FileName
 Index=3
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 3 ? 0 : 1 )
 
 [mAppName4]
@@ -35,7 +35,7 @@ Path=[mApps]
 Type=FileName
 Index=4
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 4 ? 0 : 1 )
 
 [mAppName5]
@@ -45,7 +45,7 @@ Path=[mApps]
 Type=FileName
 Index=5
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 5 ? 0 : 1 )
 
 [mAppName6]
@@ -55,7 +55,7 @@ Path=[mApps]
 Type=FileName
 Index=6
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 6 ? 0 : 1 )
 
 [mAppName7]
@@ -65,7 +65,7 @@ Path=[mApps]
 Type=FileName
 Index=7
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 7 ? 0 : 1 )
 
 [mAppName8]
@@ -75,7 +75,7 @@ Path=[mApps]
 Type=FileName
 Index=8
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 8 ? 0 : 1 )
 
 [mAppName9]
@@ -85,7 +85,7 @@ Path=[mApps]
 Type=FileName
 Index=9
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 9 ? 0 : 1 )
 
 [mAppName10]
@@ -95,7 +95,7 @@ Path=[mApps]
 Type=FileName
 Index=10
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 10 ? 0 : 1 )
 
 [mAppName11]
@@ -105,7 +105,7 @@ Path=[mApps]
 Type=FileName
 Index=11
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 11 ? 0 : 1 )
 
 [mAppName12]
@@ -115,7 +115,7 @@ Path=[mApps]
 Type=FileName
 Index=12
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 12 ? 0 : 1 )
 
 [mAppName13]
@@ -125,7 +125,7 @@ Path=[mApps]
 Type=FileName
 Index=13
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 13 ? 0 : 1 )
 
 [mAppName14]
@@ -135,7 +135,7 @@ Path=[mApps]
 Type=FileName
 Index=14
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 14 ? 0 : 1 )
 
 [mAppName15]
@@ -145,7 +145,7 @@ Path=[mApps]
 Type=FileName
 Index=15
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] >= 15 ? 0 : 1 )
 
 [mAppName16]
@@ -155,6 +155,6 @@ Path=[mApps]
 Type=FileName
 Index=16
 DynamicVariables=1
-UpdateDivider=1
+UpdateDivider=1000
 Disabled=( [mAppCount] = 16 ? 0 : 1 )
 
